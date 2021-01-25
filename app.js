@@ -3,7 +3,7 @@ class SideNav {
     this.hamburgerElem = document.querySelector('.hamburger');
     this.sideNavElem = document.querySelector('.side-nav');
     this.sideNavPanelElem = document.querySelector('.side-nav__panel');
-    this.sideNavCloseElem = document.querySelector('.side-nav__close');
+    this.sideNavCloseElem = document.querySelector('.side-nav__panel-close');
     this.sideNavBackdropElem = document.querySelector('.side-nav__backdrop');
 
     this.showSideNav = this.showSideNav.bind(this);

@@ -83,7 +83,7 @@
   transition: all 250ms ease-out;
 }
 
-.side-nav__panel__content {
+.side-nav__panel-content {
   display: flex;
   height: 200px;
   padding: 24px;
@@ -98,7 +98,7 @@
   justify-content: flex-end;
 }
 
-.side-nav__close {
+.side-nav__panel-close {
   position: absolute;
   top:12px;
   left: 12px;
@@ -112,12 +112,12 @@
   cursor: pointer;
 }
 
-.side-nav__panel__links {
+.side-nav__panel-links {
   list-style: none;
   padding: 24px 0;
 }
 
-.side-nav__panel__links li {
+.side-nav__panel-links li {
   padding: 12px 24px;
   font-size: 20px;
   color: #333;
@@ -125,7 +125,7 @@
   letter-spacing: 1px;
 }
 
-.side-nav__panel__links li:hover {
+.side-nav__panel-links li:hover {
   background-color: #eee;
 }
 
