@@ -30,7 +30,7 @@ class SideNav {
   }
 
   onPointerDown(e) {
-    if (!e.pointerType === "touch") {
+    if (e.pointerType !== "touch") {
       return;
     }
     this.startX = e.pageX;
@@ -38,7 +38,7 @@ class SideNav {
   }
 
   onPointerMove(e) {
-    if (!e.pointerType === "touch") {
+    if (e.pointerType !== "touch") {
       return;
     }
     this.offsetX = e.pageX - this.startX;
@@ -47,6 +47,9 @@ class SideNav {
   }
 
   onPointerUp(e) {
+    if (e.pointerType !== "touch") {
+      return;
+    }
     if (this.offsetX < -100) {
       this.offsetX = 0;
       this.startX = 0;
